@@ -1,0 +1,38 @@
+<html>
+<body>
+
+<h2>Bruce's Pilot Survey</h2>
+
+<script type="text/javascript">
+function random_6(){
+    var myrandom = Math.round(Math.random()*2)
+    var link1 = "https://aber.onlinesurveys.ac.uk/principlesimg1"
+    var link2 = "https://aber.onlinesurveys.ac.uk/principlesimg2"
+    var link3 = "https://aber.onlinesurveys.ac.uk/principlesimg3"
+    var link4 = "https://aber.onlinesurveys.ac.uk/principlesimg4"
+    var link5 = "https://aber.onlinesurveys.ac.uk/principlesimg5"
+    var link6 = "https://aber.onlinesurveys.ac.uk/principlesimg6"
+
+    	if (myrandom==0)
+        window.location=link1
+    else if (myrandom==1)
+        window.location=link2
+    else if (myrandom==2)
+        window.location=link3
+	else if (myrandom==3)
+        window.location=link4
+	else if (myrandom==4)
+        window.location=link5
+	else if (myrandom==5)
+        window.location=link6
+}
+</script>
+
+<form>
+<input type="Button" value="Pilot Survey" onClick="random_6()">
+</form>
+
+<p id="demo"></p>
+
+</body>
+</html> 
