@@ -3,17 +3,24 @@
 
 <h2>Bruce's Pilot Survey</h2>
 
-<script type="text/javascript">
-function random_6(){
-    var linkUrl = "https://aber.onlinesurveys.ac.uk/principlesimg" + rand(0, 6);
-        
-   window.location = linkUrl
+Array.prototype.choice = function() {
+	let idx = Math.floor(Math.random() * this.length);
+    return this[idx]
 }
 
-function rand(min, max) {
-	return min + Math.round((max - min) * Math.random());
+function random_6(){
+    let baseUrl = "https://aber.onlinesurveys.ac.uk/"
+    let surveys = [
+    	"principlesimg1",
+        "principlesimg2",
+        "principlesimg3",
+        "principlesimg4",
+        "principlesimg5",
+        "principlesimg6",
+    ]
+	
+    window.location = baseUrl + surveys.choice()
 }
-</script>
 	
 <form>
 <input type="Button" value="Pilot Survey" onClick="random_6()">
