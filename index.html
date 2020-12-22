@@ -13,7 +13,6 @@ Array.prototype.choice = function() {
 	let idx = Math.floor(Math.random() * this.length);
     return this[idx]
 }
-
 function random_6(){
     let baseUrl = "https://aber.onlinesurveys.ac.uk/"
     let surveys = [
@@ -23,11 +22,9 @@ function random_6(){
         "principlesimg4",
         "principlesimg5",
         "principlesimg6",
-    ]
-	
+    ]	
     window.location = baseUrl + surveys.choice()
 }
-	
 <form>
 <input type="Button" value="Pilot Survey" onClick="random_6()">
 </form>
